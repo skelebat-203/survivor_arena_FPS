@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c2afk66pn7qwk"]
+
+[ext_resource type="Texture2D" uid="uid://ccfkjhvaxi3va" path="res://level/checkboard.png" id="1_y0uq7"]
+
+[resource]
+albedo_color = Color(0.52698636, 0.4431831, 0.08018965, 1)
+albedo_texture = ExtResource("1_y0uq7")
+roughness = 0.0
+uv1_scale = Vector3(2, 2, 2)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 1.442751

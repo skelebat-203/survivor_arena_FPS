@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cwr6ijifityhv"]
+
+[ext_resource type="PackedScene" uid="uid://cklb6epf2hqrp" path="res://player/simple_gun/gun_model.glb" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://5ogjbdfh1b57" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://vfqf8o8glo2g" path="res://player/reticle.png" id="3_g1dw6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ci8v3"]
+
+[node name="Player" type="CharacterBody3D" unique_id=108053937]
+collision_mask = 0
+script = ExtResource("1_rkbax")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=639511421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_ci8v3")
+debug_color = Color(0, 0.6, 0.69803923, 1)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1787594163]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7041473, -0.31388763)
+cull_mask = 1
+
+[node name="gun_model" parent="Camera3D" unique_id=1742510434 instance=ExtResource("1_oul6g")]
+transform = Transform3D(-0.19973695, 0.0009777894, -0.010206877, 0.00091754616, 0.1999942, 0.001203551, 0.010212465, 0.001155146, -0.19973576, 0.23713487, -0.059092283, -0.24811631)
+
+[node name="Marker3D" type="Marker3D" parent="Camera3D/gun_model" unique_id=2144911276]
+unique_name_in_owner = true
+transform = Transform3D(1.0000001, -4.452886e-09, -3.3527613e-08, -9.982614e-09, 1, -5.5413693e-08, 2.4214387e-07, -8.568168e-08, 1.0000013, -0.002235651, 0.055191994, 0.7065865)
+
+[node name="Reticle" type="TextureRect" parent="." unique_id=1425704306]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -22.0
+offset_right = 23.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_g1dw6")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Timer" type="Timer" parent="." unique_id=141650395]
+unique_name_in_owner = true
+wait_time = 0.2
+one_shot = true
