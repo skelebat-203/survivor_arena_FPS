@@ -79,3 +79,6 @@ Max means across all games
 - time (max)
 - jumps (max)
 - games played
+
+
+words added to test Git and Git Cols is setup correctly_
