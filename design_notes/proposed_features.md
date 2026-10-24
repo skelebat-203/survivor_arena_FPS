@@ -39,6 +39,10 @@ Likely covered in tutorial
 	- every 5 sec regain 1 HP.
 	- At full move to the nearest platform that is not home base
 	- never run toward home base
+	
+### Mob types
+- bat: homing, 3 hits to kill, gravity = 0
+- weeping angel: homing, involnerable, gravity = 0 if not in view
 
 ## Scoring
 1. mobs killed
@@ -79,6 +83,3 @@ Max means across all games
 - time (max)
 - jumps (max)
 - games played
-
-
-words added to test Git and Git Cols is setup correctly_

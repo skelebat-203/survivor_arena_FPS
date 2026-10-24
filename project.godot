@@ -70,6 +70,21 @@ shoot={
 ]
 }
 
+[layer_names]
+
+3d_render/layer_1="Bedrock"
+3d_render/layer_2="Terrain"
+3d_render/layer_3="Bridge"
+3d_render/layer_4="Player"
+3d_render/layer_5="Mob"
+3d_render/layer_6="Projectile"
+3d_physics/layer_1="Bedrock"
+3d_physics/layer_2="Terrain"
+3d_physics/layer_3="Bridge"
+3d_physics/layer_4="Player"
+3d_physics/layer_5="Mob"
+3d_physics/layer_6="Projectile"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
