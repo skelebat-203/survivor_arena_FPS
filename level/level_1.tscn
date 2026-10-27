@@ -28,12 +28,12 @@ grow_amount = 15.671
 [node name="Level_01" type="Node3D" unique_id=1650079276]
 
 [node name="Player" parent="." unique_id=108053937 instance=ExtResource("1_omx5w")]
-transform = Transform3D(-1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.7881393e-07, 21.89769, 0.4295928, 24.432713)
+transform = Transform3D(-1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.7881393e-07, 24.04398, 1.0649965, 87.893074)
 collision_layer = 8
 collision_mask = 23
 
 [node name="Mob" parent="." unique_id=1726644288 instance=ExtResource("5_jfgjb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 1, 25.147491)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.547777, 1, 1.9579)
 
 [node name="World" type="Node3D" parent="." unique_id=44011077]
 
@@ -152,14 +152,6 @@ material = ExtResource("1_moo38")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, -5, 0)
 use_collision = true
 collision_layer = 4
-collision_mask = 0
-size = Vector3(10, 10, 10)
-material = ExtResource("1_moo38")
-
-[node name="Grass7" type="CSGBox3D" parent="World/Terrain/Grass" unique_id=1378113013]
-transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 26, -5.0699587, 55.171997)
-use_collision = true
-collision_layer = 2
 collision_mask = 0
 size = Vector3(10, 10, 10)
 material = ExtResource("1_moo38")
@@ -356,3 +348,73 @@ collision_layer = 2
 collision_mask = 0
 size = Vector3(1, 6, 1)
 material = ExtResource("1_moo38")
+
+[node name="Test-stuff" type="Node3D" parent="." unique_id=564114367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, -5.0699587, 109.967995)
+
+[node name="Test-block" type="CSGBox3D" parent="Test-stuff" unique_id=355532145]
+transform = Transform3D(-0.015762739, 0.9998194, 0.010603798, -0.9997999, -0.015629966, -0.012496702, -0.012328856, -0.01079867, 0.99986553, -2.1000004, 5.923911, -15.128944)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block2" type="CSGBox3D" parent="Test-stuff" unique_id=1932255015]
+transform = Transform3D(-0.01576274, 0.99981946, 0.010603799, -0.9955707, -0.014710984, -0.09285964, -0.092687055, -0.012020571, 0.99562275, -2.1000004, 7.2049747, -11.043343)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block3" type="CSGBox3D" parent="Test-stuff" unique_id=1361771887]
+transform = Transform3D(-0.015762739, 0.9998194, 0.010603798, -0.9818307, -0.017483182, 0.1889523, 0.18910345, -0.0074327257, 0.9819288, -2.1000004, 8.74268, -6.9094467)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block4" type="CSGBox3D" parent="Test-stuff" unique_id=1693535324]
+transform = Transform3D(-0.45382625, 0.8905332, -0.0314969, -0.8323789, -0.43627787, -0.3417705, -0.31809968, -0.12888709, 0.9392554, -5.944525, 10.167968, -6.5258255)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block5" type="CSGBox3D" parent="Test-stuff" unique_id=1625813469]
+transform = Transform3D(-0.01576274, 0.99981946, 0.010603799, -0.9955707, -0.014710984, -0.09285964, -0.092687055, -0.012020571, 0.99562275, -8.18041, 10.167968, -9.971878)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block6" type="CSGBox3D" parent="Test-stuff" unique_id=1936444677]
+transform = Transform3D(-0.01576274, 0.99981946, 0.010603799, -0.9955707, -0.014710984, -0.09285964, -0.092687055, -0.012020571, 0.99562275, -13.75032, 8.120596, -9.971878)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-block7" type="CSGBox3D" parent="Test-stuff" unique_id=1005537685]
+transform = Transform3D(0.9882797, 0.12070039, 0.09346054, -0.13307214, 0.98116726, 0.14000797, -0.07480157, -0.15080407, 0.9857295, -10.987376, 8.916373, -7.147629)
+use_collision = true
+collision_layer = 4
+collision_mask = 6
+size = Vector3(1, 2, 3.5)
+material = ExtResource("2_nokfs")
+
+[node name="Test-platform" type="CSGBox3D" parent="Test-stuff" unique_id=1378113013]
+transform = Transform3D(9.999999, 0, 0, 0, 1, 0, 0, 0, 9.999999, 0, 0, 0)
+use_collision = true
+collision_layer = 2
+collision_mask = 0
+size = Vector3(10, 10, 10)
+material = ExtResource("1_moo38")
+
+[node name="Test-Mob" parent="Test-stuff" unique_id=1670322301 instance=ExtResource("5_jfgjb")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 3.5477753, 6.0699587, -33.743996)

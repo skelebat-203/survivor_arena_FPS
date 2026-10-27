@@ -4,7 +4,7 @@
 extends CharacterBody3D
 
 const GRAVITY = 20
-const SPEED = 5.0
+const SPEED = 6.0
 const JUMP_VELOCITY = 7.5
 const MOUSE_SPEED = 4
 
@@ -25,8 +25,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		# Set min/max for up/down camera movement
 		%Camera3D.rotation_degrees.x = clampf(
 			%Camera3D.rotation_degrees.x - event.relative.y / MOUSE_SPEED,
-			-55.0,
-			30.0
+			-75.0,
+			75.0
 			)
 	# ESC displays cursor allowing player to move mouse outside the game window
 	elif event.is_action_pressed("ui_cancel"): # "ui_cancel" is a pre-definded action. I maps to ESC
