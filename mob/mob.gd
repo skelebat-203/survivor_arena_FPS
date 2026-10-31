@@ -18,8 +18,8 @@ func _ready() -> void:
 	#heal_timer.timeout.connect(heal)
 	#heal_timer.start(2.0)
 	
-func _physics_process(delta: float) -> void:
-	pass
+#func _physics_process(delta: float) -> void:
+	#pass
 
 func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
 	if health <= 0:

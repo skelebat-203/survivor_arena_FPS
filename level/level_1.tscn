@@ -3,6 +3,7 @@
 [ext_resource type="Material" uid="uid://7i02kg3vb1w" path="res://materials/grass.tres" id="1_moo38"]
 [ext_resource type="PackedScene" uid="uid://cwr6ijifityhv" path="res://player/player.tscn" id="1_omx5w"]
 [ext_resource type="Material" uid="uid://c2afk66pn7qwk" path="res://materials/log.tres" id="2_nokfs"]
+[ext_resource type="PackedScene" uid="uid://cej4ocnsbb275" path="res://mob/spawner/mob_spawner_3d.tscn" id="3_l1g64"]
 [ext_resource type="Material" uid="uid://2xjqffwybb3i" path="res://materials/rock.tres" id="3_nokfs"]
 [ext_resource type="PackedScene" uid="uid://dfbipnsw1kmcu" path="res://mob/Mob.tscn" id="5_jfgjb"]
 
@@ -28,12 +29,12 @@ grow_amount = 15.671
 [node name="Level_01" type="Node3D" unique_id=1650079276]
 
 [node name="Player" parent="." unique_id=108053937 instance=ExtResource("1_omx5w")]
-transform = Transform3D(-1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.7881393e-07, 24.04398, 1.0649965, 87.893074)
+transform = Transform3D(-1.7881393e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -1.7881393e-07, -0.2834835, 1.0649965, 5.0566025)
 collision_layer = 8
 collision_mask = 23
 
-[node name="Mob" parent="." unique_id=1726644288 instance=ExtResource("5_jfgjb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.547777, 1, 1.9579)
+[node name="MobSpawner3D" parent="." unique_id=1198894968 instance=ExtResource("3_l1g64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.236557, 0.9644284, 0)
 
 [node name="World" type="Node3D" parent="." unique_id=44011077]
 
